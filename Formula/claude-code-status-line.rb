@@ -5,21 +5,21 @@
 class ClaudeCodeStatusLine < Formula
   desc "A fully customizable, multi-line statusline for Claude Code"
   homepage "https://github.com/EvanPluchart/claude-code-status-line"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.3/claude-code-status-line_0.1.3_darwin_amd64.tar.gz"
-      sha256 "db1e5929ccb928082e9fe90fa794c7c1376b2f7a3e7d163249f5ed6e01a869ed"
+      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.4/claude-code-status-line_0.1.4_darwin_amd64.tar.gz"
+      sha256 "e605a071cc4bc5bf5296b762a39b1b28d4bd41b59f764234a1d532ab65d93863"
 
       define_method(:install) do
         bin.install "claude-code-status-line"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.3/claude-code-status-line_0.1.3_darwin_arm64.tar.gz"
-      sha256 "63c3161809d2ae916f4195b7ea646b5f721d2746b0a7a0c24c81a2b5f6cad8f8"
+      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.4/claude-code-status-line_0.1.4_darwin_arm64.tar.gz"
+      sha256 "99819abf9b92376b0900312260485e91ac2fbe2f1f362264b4c4f696020f0890"
 
       define_method(:install) do
         bin.install "claude-code-status-line"
@@ -29,15 +29,15 @@ class ClaudeCodeStatusLine < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.3/claude-code-status-line_0.1.3_linux_amd64.tar.gz"
-      sha256 "cc602d3a112855a3050397b50a7ce9852411c06299af704a493dfc87d9cc8f96"
+      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.4/claude-code-status-line_0.1.4_linux_amd64.tar.gz"
+      sha256 "54c544af92bd0859a586e42405b8c555a3af04d41c3614eac7bd662efee51bd1"
       define_method(:install) do
         bin.install "claude-code-status-line"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.3/claude-code-status-line_0.1.3_linux_arm64.tar.gz"
-      sha256 "08849c33429f7ad014390cea777d2d921815e9b37c1af028745c1146103be097"
+      url "https://github.com/EvanPluchart/claude-code-status-line/releases/download/v0.1.4/claude-code-status-line_0.1.4_linux_arm64.tar.gz"
+      sha256 "57490a7977793f2382ef49d967489ebc958deb9bfeae9e33e7ea181eeba6ed1b"
       define_method(:install) do
         bin.install "claude-code-status-line"
       end
