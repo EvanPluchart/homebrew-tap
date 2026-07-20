@@ -1,6 +1,6 @@
 cask "clippy" do
-  version "1.3.0"
-  sha256 "5e011ce5c17febbfd50c1bffb08f225e0a0e21d94722055178f2c06769093ec4"
+  version "1.3.1"
+  sha256 "328e1d1b10289684d31599505a07a54d2ae47ae508cf5dd38574df80dc1d421f"
 
   url "https://github.com/EvanPluchart/Clippy/releases/download/v#{version}/Clippy-#{version}.dmg"
   name "Clippy"
